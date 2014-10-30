@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.m
 //  iTools
@@ -24,6 +25,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
@@ -42,7 +44,8 @@
         }
     }
     if (idx==NSNotFound) {
-        [_tabItems addObject:[[DeviceNode alloc] initWithDevice:device]];
+        DeviceNode * node = [[DeviceNode alloc] initWithDevice:device];
+        [_tabItems addObject:node];
         [_outlineView reloadData];
     }
     [[NSNotificationCenter defaultCenter] postNotificationName:kDeviceAddedNotify object:device];

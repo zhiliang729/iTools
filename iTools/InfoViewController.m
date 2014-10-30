@@ -54,7 +54,8 @@
     if([key isEqualToString:@"_deviceInfo"]){
         return [super valueForKey:key];
     }else{
-        return [_device deviceValueForKey:key];
+        id obj = [_device deviceValueForKey:key];
+        return obj;
     }
 }
 @end
