@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "zip.h"
+#import "../libs/libzip-0.11.2/lib/zip.h"
 
 static char *base64encode(const unsigned char *buf, size_t size);
 int zip_f_get_contents(struct zip *zf, const char *filename, int locate_flags, char **buffer, uint32_t *len);
