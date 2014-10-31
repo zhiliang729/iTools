@@ -39,7 +39,7 @@
     for (int i=0;i<_tabItems.count;i++) {
         DeviceNode *node=[_tabItems objectAtIndex:i];
         if ([node.device.udid isEqualToString:udid]) {
-            idx=i;
+            idx = i;
             break;
         }
     }
@@ -57,7 +57,7 @@
     for (int i=0;i<_tabItems.count;i++) {
         DeviceNode *node=[_tabItems objectAtIndex:i];
         if ([node.device.udid isEqualToString:udid]) {
-            idx=i;
+            idx = i;
             break;
         }
     }

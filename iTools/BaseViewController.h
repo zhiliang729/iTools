@@ -11,9 +11,9 @@
 
 @class DeviceItemNode;
 @interface BaseViewController : NSViewController{
-    AMDevice* _device;
+    AMDevice * _device;
 }
 @property(nonatomic,strong)AMDevice* device;
--(void)viewWillAppear;
--(void)viewWillDisAppear;
+- (void)viewWillAppear;
+- (void)viewWillDisAppear;
 @end

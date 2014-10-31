@@ -9,8 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate,NSTableViewDelegate,NSWindowDelegate>
-@property (weak) IBOutlet NSOutlineView *outlineView;
-@property (weak) IBOutlet NSView *welcomeView;
-@property (weak) IBOutlet NSSplitView *splitView;
-@property (assign) IBOutlet NSWindow *window;
+@property (weak  ) IBOutlet NSOutlineView * outlineView;
+@property (weak  ) IBOutlet NSView        * welcomeView;
+@property (weak  ) IBOutlet NSSplitView   * splitView;
+@property (assign) IBOutlet NSWindow      * window;
 @end
